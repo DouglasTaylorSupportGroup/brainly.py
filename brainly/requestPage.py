@@ -15,5 +15,5 @@ def requestWebsite(url, cookie, userAgent):
         "Sec-Fetch-User": "?1"
     }
 
-    response = requests.get(url="https://brainly.com/question/17561883", headers=headers)
+    response = requests.get(url=url, headers=headers)
     return response.text
